@@ -117,22 +117,34 @@
 
 成人向けの台詞はフィルタ済みなので、追加の処理は不要。
 
-**共通マニフェスト形式**: ルビは抽出済みなので、パーサは作らない。既存の形式を次の JSONL に変換するだけにする（`data_pipeline/novelgame/to_manifest.py`）。
+**共通マニフェスト形式**: 既存のメタデータ（他の TTS と共用していたもの）を、`data_pipeline/novelgame/to_manifest.py` で次の JSONL に変換する。
 
 ```json
-{"id": "t012_c03_000451",
- "audio": "t012/voice/c03_000451.ogg",
- "text": "今日は日本橋で待ち合わせよう。",
- "ruby": [{"start": 0, "end": 2, "reading": "こんにち"}, {"start": 3, "end": 6, "reading": "にっぽんばし"}],
- "speaker": "t012/c03",
- "title": "t012",
- "prev_id": "t012_c03_000450"}
+{"id": "2a046e12…aef8",
+ "audio": "GalGame/sprite_Ao no Kanata no Four Rhythm/明日香/asuka_00956.ogg",
+ "text": "安全教室ですか",
+ "ruby": [{"start": 0, "end": 2, "reading": "アンゼン"}],
+ "speaker": "sprite_Ao no Kanata no Four Rhythm/明日香",
+ "title": "sprite_Ao no Kanata no Four Rhythm",
+ "duration": 2.16, "duration_estimated": true,
+ "src_status": "acoustic_and_asr_phone_match"}
 ```
 
-- `start` と `end` は `text` 内の文字位置（end は含まない）。`reading` はひらがなかカタカナ（内部ではカタカナに統一）。
-- `title` は作品 ID。評価用と学習用の分割（タイトル単位）に使う。
-- `speaker` は「作品/キャラクター」。同じ声優が複数作品にいても別話者として扱う（声優の対応表があれば任意で `voice_actor` を追加）。
-- `prev_id` は直前の台詞。文脈付き学習（v2）のために残しておく。
+| 元のフィールド | 扱い |
+|---|---|
+| `uid` | `id`（無ければ `catalog_id`、それも無ければ音声パスのハッシュ） |
+| `audio_path` | `audio`（`--audio-root` からの相対パス。マウント先が変わっても使える） |
+| `text` | `text`。インラインのルビ記法があれば取り除き、`ruby` に移す |
+| `game_id` / `character_id` | `title` / `speaker`（`作品/キャラ`） |
+| `performer_id` | 値があれば `voice_actor` |
+| `duration_sec` / `duration_is_estimated` | `duration` / `duration_estimated`。`--probe-duration` で実際の長さに置き換える |
+| `cleaning_status` | `src_status`。`--keep-status` で絞り込める |
+| `split` | **使わない**。台詞単位の分割だと同じ作品が学習と評価の両方に入るので、作品単位で分け直す |
+| `catalog_id` / `frames` ほか | 捨てる（他の TTS 用の情報） |
+
+- ルビの読み取り元: ①`--ruby-text-field`（ルビ記法入りの本文があるフィールド）、②`--ruby-field` か自動検出（`ruby` / `rubies` / `furigana` / `ruby_spans` / `yomi`）、③`text` 内のインライン記法。記法は `｜漢字《かな》`、`漢字《かな》`、`{漢字|かな}`、`<ruby>`、`[ruby text=…]` に対応する。
+- 読みはカタカナに統一する。傍点（`《・・》`）は捨てる。カナでない読みや位置のずれは警告に出す。
+- `--report` で件数・時間・ステータス別件数・ルビの付与率・警告の種類・**元データに含まれるフィールド名の一覧**を出す。
 
 ### 5.3 前処理パイプラインと GPU 割り当て
 
@@ -320,7 +332,8 @@ LilyTTS-JP/
 - [x] ゲームデータの形式 → ルビは抽出済みで音声と対応済み。共通マニフェストへの変換だけ（§5.2）
 - [x] 成人向けの台詞 → フィルタ済み
 - [x] 話者 → ゼロショットの本体 ＋ 話者LoRA（§6.4）。話者IDの埋め込みは使わない
-- [ ] 既存のルビ形式（JSON のフィールド構成、またはインライン記法）の実例を確認し、`to_manifest.py` を合わせる
+- [x] 元データの形式 → `to_manifest.py` を実装した（§5.2）
+- [ ] ルビがどこにあるか（サンプルの `text` にはルビが無かった）。別フィールドか別ファイルかを確認する
 
 ---
 
