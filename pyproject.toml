@@ -6,6 +6,7 @@ dependencies = []
 
 [project.optional-dependencies]
 audio = ["soundfile"]
+text = ["pyopenjtalk-plus"]
 dev = ["pytest"]
 
 [tool.setuptools.packages.find]
@@ -14,3 +15,6 @@ include = ["lilytts*", "data_pipeline*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+
+[tool.setuptools.package-data]
+"lilytts.labeler" = ["data/*.tsv"]
