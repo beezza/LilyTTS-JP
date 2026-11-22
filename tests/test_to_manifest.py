@@ -41,6 +41,7 @@ def test_sample_record(tmp_path):
             "duration": 2.16,
             "duration_estimated": True,
             "src_status": "acoustic_and_asr_phone_match",
+            "text_check": "asr_phone",
         }
     ]
     assert rep["records_out"] == 1 and rep["source_keys"]["frames"] == 1
@@ -66,3 +67,19 @@ def test_ruby_text_field_and_status_filter(tmp_path):
     assert rows[0]["ruby"] == [{"start": 0, "end": 2, "reading": "アンゼン"}]
     assert rep["rejected"] == {"status_filtered": 1}
     assert rep["warnings"] == {}
+
+
+def test_status_policy_fields(tmp_path):
+    a = {**SAMPLE, "uid": "a"}
+    b = {**SAMPLE, "uid": "b", "cleaning_status": "phrase_end_timing"}
+    c = {**SAMPLE, "uid": "c", "cleaning_status": "human_corrected",
+         "text": "安全教室ですか", "original_transcript": "安全教室ですかー"}
+    d = {**SAMPLE, "uid": "d", "cleaning_status": "something_new"}
+    rows, rep = run(tmp_path, [a, b, c, d])
+    by_id = {r["id"]: r for r in rows}
+    assert by_id["a"]["text_check"] == "asr_phone" and "phrase_end_mismatch" not in by_id["a"]
+    assert by_id["b"]["phrase_end_mismatch"] is True
+    assert by_id["c"]["text_check"] == "human"
+    assert by_id["c"]["src_original_text"] == "安全教室ですかー"
+    assert by_id["d"]["text_check"] == "unknown"
+    assert rep["unknown_status"] == {"something_new": 1}

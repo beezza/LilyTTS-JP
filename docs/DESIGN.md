@@ -138,7 +138,8 @@
 | `game_id` / `character_id` | `title` / `speaker`（`作品/キャラ`） |
 | `performer_id` | 値があれば `voice_actor` |
 | `duration_sec` / `duration_is_estimated` | `duration` / `duration_estimated`。`--probe-duration` で実際の長さに置き換える |
-| `cleaning_status` | `src_status`。`--keep-status` で絞り込める |
+| `cleaning_status` | `src_status`、`text_check`、`phrase_end_mismatch`（§5.4 の表）。`--keep-status` で絞り込める |
+| `original_transcript` | 本文と違えば `src_original_text`（人手修正前の台詞） |
 | `split` | **使わない**。台詞単位の分割だと同じ作品が学習と評価の両方に入るので、作品単位で分け直す |
 | `catalog_id` / `frames` ほか | 捨てる（他の TTS 用の情報） |
 
@@ -160,9 +161,22 @@
 
 ### 5.4 PK ラベラ（音声から読みとアクセントを取る）
 
-- **カナ音素認識器**: rinna/japanese-hubert-base（95M）を CTC で微調整する。教師は JSUT / JVS の人手の読みと、`src_status` が音素一致済み（`acoustic_and_asr_phone_match`）の台詞（本文から作った読みと音声の音素が一致しているので、教師として信頼できる）。
+- **元データの `cleaning_status` で分かること**: 音素一致の判定は「元台詞を G2P した音素」と「Whisper の書き起こしを G2P した音素」を比べたものと考えられる。両方ともテキストからの G2P なので、**一致したことで分かるのは本文の語が正しいことだけで、漢字の読みは裏付けられていない**（G2P が同形異音語を読み違えると、両側で同じように読み違えるため）。したがって**読みは必ずこちらのラベラで音声から取る**。
+
+  | `cleaning_status` | 本文の信頼度 | `text_check` | 認識器の教師 | アクセントの正解 |
+  |---|---|---|---|---|
+  | `human_original` / `human_corrected` | 最高（人が試聴） | `human` | ○ | ○ |
+  | `ctc_confirms_original` | 高（別のCTCモデルが裏付け） | `ctc` | ○ | ○ |
+  | `acoustic_and_asr_phone_match` | 高 | `asr_phone` | ○ | ○ |
+  | `phrase_end_timing` | 高（句末の長音・促音だけ違う） | `asr_phone` + `phrase_end_mismatch` | ×（句末のラベルがずれる） | 句末を除けば ○ |
+
+  `human_corrected` の元台詞（`original_transcript`）は `src_original_text` に残す。台本と実際の発話の違い（アドリブ）を分析するのに使える。
+- **カナ音素認識器**: rinna/japanese-hubert-base（95M）を CTC で微調整する。音声と完全に一致したカナの教師が必要だが、上の通りゲームデータの読みは保証されていないので、**段階的に作る**:
+  1. 初期の教師: JSUT / JVS の人手の読み ＋ **辞書上の読みが一意な語だけでできた台詞**（同形異音語・数詞・未知語を含まない。この場合は G2P の読みがほぼ確実に正しい）。`phrase_end_mismatch` の台詞は除く。
+  2. その認識器で、残りの台詞の読みを §5.4 の候補選択で復元する。
+  3. 信頼度の高いものを教師に加えて再学習する（自己学習を2〜3回）。
 - **読みの決定**: 本文から読み候補を作り（pyopenjtalk / UniDic / marine の N-best に、同形異音語辞書の全候補と助数詞の音便形を加える）、認識器のスコアで選ぶ。候補に正解が無いとき（当て字・キャラ名など）は認識器の出力を採用し、「固有読み」の印を付ける。
-- **選別の偏りに注意**: 音素一致で選ばれたデータは「辞書の読みで合っていた」台詞に偏っており、**辞書が読みを誤る難しい台詞ほど除外されている**可能性が高い。音素が一致しなかった台詞が元データに残っているなら、それらは**難読の正解データの宝庫**なので、上の候補選択で読みを復元して使う。
+- **選別の偏りは小さい**: 元データの選別は語の一致を見ているだけなので、難しい読みの台詞が選択的に落とされているわけではない。落ちているのは主に、Whisper が別の表記で書いた台詞（珍しい固有名詞やキャラ名、早口、アドリブ）と考えられる。読みの難例は、採用済みの台詞の中に十分残っている。
 - **アクセント**: 強制アライメント → RMVPE で F0 → 分類器。教師は JSUT の人手ラベル（評価用の部分は除外）。
 - **信頼度**が低い発話は「本文のみ」入力の学習に回す。
 
@@ -334,7 +348,8 @@ LilyTTS-JP/
 - [x] 成人向けの台詞 → フィルタ済み
 - [x] 話者 → ゼロショットの本体 ＋ 話者LoRA（§6.4）。話者IDの埋め込みは使わない
 - [x] 元データの形式 → `to_manifest.py` を実装した（§5.2）
-- [ ] `cleaning_status` にどんな値があるか。特に、音素が一致しなかった台詞も元データに残っているか（§5.4 の難読データになる）
+- [x] `cleaning_status` の値 → 5種類すべてを使う。用途の対応は §5.4、実装は `data_pipeline/novelgame/status_policy.py`
+- [ ] 元データの「音素」が、Whisper の書き起こしを G2P したものか、音声から直接取ったものか（`ctc_confirms_original` の CTC がカナや音素を出すモデルなら、その台詞は読みまで音声で裏付けられている）
 
 ---
 

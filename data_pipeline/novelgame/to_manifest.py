@@ -19,7 +19,12 @@ Output record (one per line)::
 
     {"id", "audio", "text", "ruby": [{"start", "end", "reading"}],
      "speaker": "<game_id>/<character_id>", "title": "<game_id>",
-     "voice_actor"?, "duration", "duration_estimated", "src_status"}
+     "voice_actor"?, "duration", "duration_estimated",
+     "src_status", "text_check", "phrase_end_mismatch"?, "src_original_text"?}
+
+``text_check`` and ``phrase_end_mismatch`` come from ``status_policy.py``.
+``src_original_text`` keeps ``original_transcript`` (the script line before a
+human correction) when it differs from ``text``.
 
 Fields from other TTS projects (``frames``, ``split``, ``catalog_id`` ...) are
 dropped. In particular the source ``split`` is not used: LilyTTS re-splits by
@@ -47,6 +52,8 @@ from pathlib import Path
 from typing import Any, Iterator
 
 from lilytts.text.ruby import normalize_ruby_field, parse_inline_ruby
+
+from .status_policy import UNKNOWN, policy_for
 
 AUTO_RUBY_FIELDS = ("ruby", "rubies", "furigana", "ruby_spans", "yomi")
 MAX_WARNING_EXAMPLES = 20
@@ -140,6 +147,7 @@ def convert(args: argparse.Namespace) -> dict[str, Any]:
         "records_out": 0,
         "rejected": Counter(),
         "status": Counter(),
+        "unknown_status": Counter(),
         "ruby_source": Counter(),
         "records_with_ruby": 0,
         "ruby_spans": 0,
@@ -204,6 +212,16 @@ def convert(args: argparse.Namespace) -> dict[str, Any]:
         out["duration_estimated"] = bool(rec.get("duration_is_estimated", dur is None))
         if status is not None:
             out["src_status"] = str(status)
+        policy = policy_for(None if status is None else str(status))
+        if policy is None:
+            stats["unknown_status"][str(status)] += 1
+            policy = UNKNOWN
+        out["text_check"] = policy.text_check
+        if policy.phrase_end_mismatch:
+            out["phrase_end_mismatch"] = True
+        orig = rec.get("original_transcript")
+        if orig and str(orig).strip() != plain:
+            out["src_original_text"] = str(orig).strip()
         out_records.append(out)
 
     if args.probe_duration and out_records:
