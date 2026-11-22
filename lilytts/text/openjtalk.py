@@ -32,6 +32,7 @@ class OJTWord:
     chain_flag: int
     start: int | None  # character span in the input text, when it can be found
     end: int | None
+    pos_group1: str = ""  # e.g. 固有名詞, 接尾
 
     @property
     def is_symbol(self) -> bool:
@@ -73,7 +74,8 @@ def words(text: str) -> list[OJTWord]:
                 start, end = found, found + len(key)
                 cursor = end
         pron = "" if w["pos"] == "記号" else _clean_pron(w["pron"])
-        out.append(OJTWord(surface, w["pos"], pron, int(w["acc"]), int(w["chain_flag"]), start, end))
+        out.append(OJTWord(surface, w["pos"], pron, int(w["acc"]), int(w["chain_flag"]), start, end,
+                           w.get("pos_group1", "")))
     return out
 
 
