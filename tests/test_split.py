@@ -32,7 +32,7 @@ def run(tmp_path, *extra):
 
 
 def test_titles_never_cross_splits(tmp_path):
-    rows, s = run(tmp_path, "--zeroshot-speakers", "30", "--ft-speakers", "5")
+    rows, s = run(tmp_path, "--zeroshot-speakers", "15", "--ft-speakers", "5")
     split_of_title = {}
     for r in rows:
         group = "train" if r["split"] == "train" else "eval"
@@ -43,8 +43,8 @@ def test_titles_never_cross_splits(tmp_path):
 
 
 def test_speaker_sets(tmp_path):
-    rows, s = run(tmp_path, "--zeroshot-speakers", "30", "--ft-speakers", "5")
-    assert len(s["speaker_ft"]) == 5 and len(s["zeroshot"]) == 30
+    rows, s = run(tmp_path, "--zeroshot-speakers", "15", "--ft-speakers", "5")
+    assert len(s["speaker_ft"]) == 5 and len(s["zeroshot"]) == 15 and not s["warnings"]
     assert not set(s["speaker_ft"]) & set(s["zeroshot"])
     by_speaker = {}
     for r in rows:
@@ -53,6 +53,11 @@ def test_speaker_sets(tmp_path):
         assert by_speaker[sp] == {"speaker_ft"}
     for sp in s["zeroshot"]:
         assert by_speaker[sp] == {"zeroshot"}
+
+
+def test_warns_when_too_few_speakers(tmp_path):
+    _, s = run(tmp_path, "--zeroshot-speakers", "1000")
+    assert "fewer zeroshot speakers than requested" in s["warnings"]
 
 
 def test_deterministic(tmp_path):
