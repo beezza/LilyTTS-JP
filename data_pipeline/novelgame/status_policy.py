@@ -1,8 +1,8 @@
 """How each source ``cleaning_status`` may be used downstream.
 
-The source pipeline compared the phonemes of the original line with the
-phonemes of Whisper's (normalised) transcript. Both sides are presumably
-produced by G2P from *text*, so a match confirms that the words are right but
+The source pipeline compared OpenJTalk phonemes of the original line with
+the normalised phonemes of Whisper's transcript. Both sides are derived from
+*text*, so a match confirms that the words are right but
 not how kanji were read: a homograph misread by G2P is misread identically on
 both sides. Readings therefore always come from LilyTTS's own audio-based
 labeler, and the fields below only describe how far the *text* can be trusted.
