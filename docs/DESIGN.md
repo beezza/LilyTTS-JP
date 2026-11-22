@@ -171,7 +171,7 @@
   | `phrase_end_timing` | 高（句末の長音・促音だけ違う） | `asr_phone` + `phrase_end_mismatch` | ×（句末のラベルがずれる） | 句末を除けば ○ |
 
   `human_corrected` の元台詞（`original_transcript`）は `src_original_text` に残す。台本と実際の発話の違い（アドリブ）を分析するのに使える。
-- **カナ音素認識器**: rinna/japanese-hubert-base（95M）を CTC で微調整する。音声と完全に一致したカナの教師が必要だが、上の通りゲームデータの読みは保証されていないので、**段階的に作る**:
+- **カナ音素認識器**: **reazon-research/japanese-wav2vec2-base-rs35kh**（約95M、ReazonSpeech 35k時間で文字 CTC を学習済み）の出力層をカナ語彙に付け替えて微調整する。日本語の音声認識をすでに学習しているので、少ない教師で早く収束する見込み。**評価の採点用には別系統のモデル**（rinna/japanese-hubert-base をカナ CTC に微調整したもの）を使い、学習の報酬と評価で同じモデルを使わないようにする。音声と完全に一致したカナの教師が必要だが、上の通りゲームデータの読みは保証されていないので、**段階的に作る**:
   1. 初期の教師: JSUT / JVS の人手の読み ＋ **辞書上の読みが一意な語だけでできた台詞**（同形異音語・数詞・未知語を含まない。この場合は G2P の読みがほぼ確実に正しい）。`phrase_end_mismatch` の台詞は除く。
   2. その認識器で、残りの台詞の読みを §5.4 の候補選択で復元する。
   3. 信頼度の高いものを教師に加えて再学習する（自己学習を2〜3回）。
@@ -351,7 +351,7 @@ LilyTTS-JP/
 - [x] 元データの形式 → `to_manifest.py` を実装した（§5.2）
 - [x] `cleaning_status` の値 → 5種類すべてを使う。用途の対応は §5.4、実装は `data_pipeline/novelgame/status_policy.py`
 - [x] 元台詞側の音素 → OpenJTalk で変換したもの。読みは音声で裏付けられていない
-- [ ] `ctc_confirms_original` の CTC モデルがカナや音素を出すモデルか（そうなら、その台詞は読みまで音声で裏付けられているので、認識器の教師の優先度を上げる）
+- [x] `ctc_confirms_original` の CTC モデル → reazon-research/japanese-wav2vec2-base-rs35kh（漢字かな混じりの文字列を出す ASR）。読みは裏付けられていないので、他の採用済みデータと同じ扱い
 
 ---
 
