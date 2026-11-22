@@ -23,7 +23,7 @@ from .kana import hira_to_kata, to_pron
 
 # Plain numeral readings, used for compounds (tens prefixes) and confusers.
 _TENS_PREFIX = {2: "に", 3: "さん", 4: "よん", 5: "ご", 6: "ろく", 7: "なな", 8: "はち", 9: "きゅう"}
-_PLAIN = {1: ["いち"], 2: ["に"], 3: ["さん"], 4: ["よん", "し"], 5: ["ご"], 6: ["ろく"],
+_PLAIN = {0: ["れい", "ぜろ"], 1: ["いち"], 2: ["に"], 3: ["さん"], 4: ["よん", "し"], 5: ["ご"], 6: ["ろく"],
           7: ["なな", "しち"], 8: ["はち"], 9: ["きゅう", "く"], 10: ["じゅう"]}
 
 
@@ -169,7 +169,7 @@ def counter_confusers(n: int | None, counter: str) -> list[str]:
     """Plausible wrong readings: plain numeral + each counter form, minus the accepted ones."""
     c = COUNTERS[counter]
     gold = set(counter_readings(n, counter))
-    nums = ["なん"] if n is None else (_plain(n) if n <= 99 else ["ひゃく"])
+    nums = ["なん", "なに"] if n is None else (_plain(n) if n <= 99 else ["ひゃく"])
     cands = _pron(a + b for a, b in itertools.product(nums, c.base))
     return [x for x in cands if x not in gold]
 
@@ -229,7 +229,7 @@ def month_readings(n: int) -> list[str]:
 def hour_readings(n: int) -> list[str]:
     """Readings of ``n時`` for 0..24."""
     if n == 0:
-        return _pron(["れいじ"])
+        return _pron(["れいじ", "ぜろじ"])
     if n in HOURS:
         return _pron(HOURS[n])
     if not 13 <= n <= 24:

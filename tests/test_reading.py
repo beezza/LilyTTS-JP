@@ -39,11 +39,17 @@ def test_audio_agreeing_with_openjtalk_is_unchanged():
     assert not r.changed and r.kana == r.openjtalk_kana
 
 
-def test_numeral_slot_corrects_nani():
+def test_numeral_slot_follows_the_audio():
+    # OpenJTalk's default for 何本 depends on whether its 何 predictor
+    # (onnxruntime) is installed, so only the chosen reading is checked.
     r = recover_reading("何本ある？", spoken("ナンボンアル"))
     (slot,) = [s for s in r.slots if s.kind == "numeral"]
-    assert (slot.surface, slot.default, slot.chosen) == ("何本", "ナニボン", "ナンボン")
-    assert slot.chosen in slot.accepted
+    assert slot.surface == "何本" and slot.chosen == "ナンボン" and slot.chosen in slot.accepted
+
+    r = recover_reading("靴下を四足買った", spoken("クツシタオヨンソクカッタ"))
+    (slot,) = [s for s in r.slots if s.kind == "numeral"]
+    assert (slot.surface, slot.default, slot.chosen) == ("四足", "シソク", "ヨンソク")
+    assert r.changed
 
 
 def test_multi_word_numeral_and_dates():

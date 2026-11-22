@@ -6,7 +6,7 @@ dependencies = []
 
 [project.optional-dependencies]
 audio = ["soundfile"]
-text = ["pyopenjtalk-plus"]
+text = ["pyopenjtalk-plus[onnxruntime]"]
 dev = ["pytest"]
 
 [tool.setuptools.packages.find]

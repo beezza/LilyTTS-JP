@@ -1,0 +1,238 @@
+{"id": "num-本-1-digit-1", "text": "傘が1本置いてある。", "targets": [{"span": [2, 4], "gold": ["イッポン"], "confusers": ["イチホン", "イチボン", "イチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-2-kanji-0", "text": "鉛筆を二本買いました。", "targets": [{"span": [3, 5], "gold": ["ニホン"], "confusers": ["ニボン", "ニポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-3-kanji-0", "text": "鉛筆を三本買いました。", "targets": [{"span": [3, 5], "gold": ["サンボン"], "confusers": ["サンホン", "サンポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-4-digit-0", "text": "鉛筆を4本買いました。", "targets": [{"span": [3, 5], "gold": ["ヨンホン"], "confusers": ["ヨンボン", "ヨンポン", "シホン", "シボン", "シポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-5-digit-2", "text": "ペンを5本ください。", "targets": [{"span": [3, 5], "gold": ["ゴホン"], "confusers": ["ゴボン", "ゴポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-6-digit-2", "text": "ペンを6本ください。", "targets": [{"span": [3, 5], "gold": ["ロッポン"], "confusers": ["ロクホン", "ロクボン", "ロクポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-7-kanji-2", "text": "ペンを七本ください。", "targets": [{"span": [3, 5], "gold": ["ナナホン"], "confusers": ["ナナボン", "ナナポン", "シチホン", "シチボン", "シチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-8-digit-1", "text": "傘が8本置いてある。", "targets": [{"span": [2, 4], "gold": ["ハッポン", "ハチホン"], "confusers": ["ハチボン", "ハチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-9-digit-2", "text": "ペンを9本ください。", "targets": [{"span": [3, 5], "gold": ["キューホン"], "confusers": ["キューボン", "キューポン", "クホン", "クボン", "クポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-10-digit-2", "text": "ペンを10本ください。", "targets": [{"span": [3, 6], "gold": ["ジュッポン", "ジッポン"], "confusers": ["ジューホン", "ジューボン", "ジューポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-51-digit-1", "text": "傘が51本置いてある。", "targets": [{"span": [2, 5], "gold": ["ゴジューイッポン"], "confusers": ["ゴジューイチホン", "ゴジューイチボン", "ゴジューイチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-91-kanji-0", "text": "鉛筆を九十一本買いました。", "targets": [{"span": [3, 7], "gold": ["キュージューイッポン"], "confusers": ["キュージューイチホン", "キュージューイチボン", "キュージューイチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-54-digit-1", "text": "傘が54本置いてある。", "targets": [{"span": [2, 5], "gold": ["ゴジューヨンホン"], "confusers": ["ゴジューヨンボン", "ゴジューヨンポン", "ゴジューシホン", "ゴジューシボン", "ゴジューシポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-14-digit-2", "text": "ペンを14本ください。", "targets": [{"span": [3, 6], "gold": ["ジューヨンホン"], "confusers": ["ジューヨンボン", "ジューヨンポン", "ジューシホン", "ジューシボン", "ジューシポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-38-kanji-0", "text": "鉛筆を三十八本買いました。", "targets": [{"span": [3, 7], "gold": ["サンジューハッポン", "サンジューハチホン"], "confusers": ["サンジューハチボン", "サンジューハチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-64-kanji-1", "text": "傘が六十四本置いてある。", "targets": [{"span": [2, 6], "gold": ["ロクジューヨンホン"], "confusers": ["ロクジューヨンボン", "ロクジューヨンポン", "ロクジューシホン", "ロクジューシボン", "ロクジューシポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-78-digit-2", "text": "ペンを78本ください。", "targets": [{"span": [3, 6], "gold": ["ナナジューハッポン", "ナナジューハチホン"], "confusers": ["ナナジューハチボン", "ナナジューハチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-67-digit-0", "text": "鉛筆を67本買いました。", "targets": [{"span": [3, 6], "gold": ["ロクジューナナホン"], "confusers": ["ロクジューナナボン", "ロクジューナナポン", "ロクジューシチホン", "ロクジューシチボン", "ロクジューシチポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-52-kanji-0", "text": "鉛筆を五十二本買いました。", "targets": [{"span": [3, 7], "gold": ["ゴジューニホン"], "confusers": ["ゴジューニボン", "ゴジューニポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-100-digit-2", "text": "ペンを100本ください。", "targets": [{"span": [3, 7], "gold": ["ヒャッポン"], "confusers": ["ヒャクホン", "ヒャクボン", "ヒャクポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-本-what-what-1", "text": "傘が何本置いてある。", "targets": [{"span": [2, 4], "gold": ["ナンボン"], "confusers": ["ナンホン", "ナンポン", "ナニホン", "ナニボン", "ナニポン"]}], "category": "numeral", "subcategory": "本", "source": "rule"}
+{"id": "num-匹-1-kanji-1", "text": "金魚を一匹飼っている。", "targets": [{"span": [3, 5], "gold": ["イッピキ"], "confusers": ["イチヒキ", "イチビキ", "イチピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-2-kanji-0", "text": "猫が二匹いる。", "targets": [{"span": [2, 4], "gold": ["ニヒキ"], "confusers": ["ニビキ", "ニピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-3-digit-0", "text": "猫が3匹いる。", "targets": [{"span": [2, 4], "gold": ["サンビキ"], "confusers": ["サンヒキ", "サンピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-4-digit-0", "text": "猫が4匹いる。", "targets": [{"span": [2, 4], "gold": ["ヨンヒキ"], "confusers": ["ヨンビキ", "ヨンピキ", "シヒキ", "シビキ", "シピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-5-kanji-1", "text": "金魚を五匹飼っている。", "targets": [{"span": [3, 5], "gold": ["ゴヒキ"], "confusers": ["ゴビキ", "ゴピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-6-digit-0", "text": "猫が6匹いる。", "targets": [{"span": [2, 4], "gold": ["ロッピキ"], "confusers": ["ロクヒキ", "ロクビキ", "ロクピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-7-digit-1", "text": "金魚を7匹飼っている。", "targets": [{"span": [3, 5], "gold": ["ナナヒキ"], "confusers": ["ナナビキ", "ナナピキ", "シチヒキ", "シチビキ", "シチピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-8-digit-1", "text": "金魚を8匹飼っている。", "targets": [{"span": [3, 5], "gold": ["ハッピキ", "ハチヒキ"], "confusers": ["ハチビキ", "ハチピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-9-kanji-1", "text": "金魚を九匹飼っている。", "targets": [{"span": [3, 5], "gold": ["キューヒキ"], "confusers": ["キュービキ", "キューピキ", "クヒキ", "クビキ", "クピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-10-kanji-0", "text": "猫が十匹いる。", "targets": [{"span": [2, 4], "gold": ["ジュッピキ", "ジッピキ"], "confusers": ["ジューヒキ", "ジュービキ", "ジューピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-86-kanji-1", "text": "金魚を八十六匹飼っている。", "targets": [{"span": [3, 7], "gold": ["ハチジューロッピキ"], "confusers": ["ハチジューロクヒキ", "ハチジューロクビキ", "ハチジューロクピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-94-kanji-0", "text": "猫が九十四匹いる。", "targets": [{"span": [2, 6], "gold": ["キュージューヨンヒキ"], "confusers": ["キュージューヨンビキ", "キュージューヨンピキ", "キュージューシヒキ", "キュージューシビキ", "キュージューシピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-81-kanji-1", "text": "金魚を八十一匹飼っている。", "targets": [{"span": [3, 7], "gold": ["ハチジューイッピキ"], "confusers": ["ハチジューイチヒキ", "ハチジューイチビキ", "ハチジューイチピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-78-digit-0", "text": "猫が78匹いる。", "targets": [{"span": [2, 5], "gold": ["ナナジューハッピキ", "ナナジューハチヒキ"], "confusers": ["ナナジューハチビキ", "ナナジューハチピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-11-kanji-1", "text": "金魚を十一匹飼っている。", "targets": [{"span": [3, 6], "gold": ["ジューイッピキ"], "confusers": ["ジューイチヒキ", "ジューイチビキ", "ジューイチピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-76-digit-0", "text": "猫が76匹いる。", "targets": [{"span": [2, 5], "gold": ["ナナジューロッピキ"], "confusers": ["ナナジューロクヒキ", "ナナジューロクビキ", "ナナジューロクピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-75-digit-0", "text": "猫が75匹いる。", "targets": [{"span": [2, 5], "gold": ["ナナジューゴヒキ"], "confusers": ["ナナジューゴビキ", "ナナジューゴピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-54-digit-0", "text": "猫が54匹いる。", "targets": [{"span": [2, 5], "gold": ["ゴジューヨンヒキ"], "confusers": ["ゴジューヨンビキ", "ゴジューヨンピキ", "ゴジューシヒキ", "ゴジューシビキ", "ゴジューシピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-43-digit-1", "text": "金魚を43匹飼っている。", "targets": [{"span": [3, 6], "gold": ["ヨンジューサンビキ"], "confusers": ["ヨンジューサンヒキ", "ヨンジューサンピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-100-digit-0", "text": "猫が100匹いる。", "targets": [{"span": [2, 6], "gold": ["ヒャッピキ"], "confusers": ["ヒャクヒキ", "ヒャクビキ", "ヒャクピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-匹-what-what-0", "text": "猫が何匹いる。", "targets": [{"span": [2, 4], "gold": ["ナンビキ"], "confusers": ["ナンヒキ", "ナンピキ", "ナニヒキ", "ナニビキ", "ナニピキ"]}], "category": "numeral", "subcategory": "匹", "source": "rule"}
+{"id": "num-杯-1-digit-0", "text": "コーヒーを1杯飲んだ。", "targets": [{"span": [5, 7], "gold": ["イッパイ"], "confusers": ["イチハイ", "イチバイ", "イチパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-2-digit-1", "text": "ご飯を2杯食べた。", "targets": [{"span": [3, 5], "gold": ["ニハイ"], "confusers": ["ニバイ", "ニパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-3-kanji-1", "text": "ご飯を三杯食べた。", "targets": [{"span": [3, 5], "gold": ["サンバイ"], "confusers": ["サンハイ", "サンパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-4-digit-1", "text": "ご飯を4杯食べた。", "targets": [{"span": [3, 5], "gold": ["ヨンハイ"], "confusers": ["ヨンバイ", "ヨンパイ", "シハイ", "シバイ", "シパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-5-kanji-1", "text": "ご飯を五杯食べた。", "targets": [{"span": [3, 5], "gold": ["ゴハイ"], "confusers": ["ゴバイ", "ゴパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-6-digit-1", "text": "ご飯を6杯食べた。", "targets": [{"span": [3, 5], "gold": ["ロッパイ"], "confusers": ["ロクハイ", "ロクバイ", "ロクパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-7-kanji-0", "text": "コーヒーを七杯飲んだ。", "targets": [{"span": [5, 7], "gold": ["ナナハイ"], "confusers": ["ナナバイ", "ナナパイ", "シチハイ", "シチバイ", "シチパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-8-digit-1", "text": "ご飯を8杯食べた。", "targets": [{"span": [3, 5], "gold": ["ハッパイ", "ハチハイ"], "confusers": ["ハチバイ", "ハチパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-9-digit-0", "text": "コーヒーを9杯飲んだ。", "targets": [{"span": [5, 7], "gold": ["キューハイ"], "confusers": ["キューバイ", "キューパイ", "クハイ", "クバイ", "クパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-10-digit-1", "text": "ご飯を10杯食べた。", "targets": [{"span": [3, 6], "gold": ["ジュッパイ", "ジッパイ"], "confusers": ["ジューハイ", "ジューバイ", "ジューパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-83-digit-0", "text": "コーヒーを83杯飲んだ。", "targets": [{"span": [5, 8], "gold": ["ハチジューサンバイ"], "confusers": ["ハチジューサンハイ", "ハチジューサンパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-91-digit-0", "text": "コーヒーを91杯飲んだ。", "targets": [{"span": [5, 8], "gold": ["キュージューイッパイ"], "confusers": ["キュージューイチハイ", "キュージューイチバイ", "キュージューイチパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-24-digit-1", "text": "ご飯を24杯食べた。", "targets": [{"span": [3, 6], "gold": ["ニジューヨンハイ"], "confusers": ["ニジューヨンバイ", "ニジューヨンパイ", "ニジューシハイ", "ニジューシバイ", "ニジューシパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-26-digit-0", "text": "コーヒーを26杯飲んだ。", "targets": [{"span": [5, 8], "gold": ["ニジューロッパイ"], "confusers": ["ニジューロクハイ", "ニジューロクバイ", "ニジューロクパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-14-digit-0", "text": "コーヒーを14杯飲んだ。", "targets": [{"span": [5, 8], "gold": ["ジューヨンハイ"], "confusers": ["ジューヨンバイ", "ジューヨンパイ", "ジューシハイ", "ジューシバイ", "ジューシパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-20-digit-0", "text": "コーヒーを20杯飲んだ。", "targets": [{"span": [5, 8], "gold": ["ニジュッパイ", "ニジッパイ"], "confusers": ["ニジューハイ", "ニジューバイ", "ニジューパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-85-digit-0", "text": "コーヒーを85杯飲んだ。", "targets": [{"span": [5, 8], "gold": ["ハチジューゴハイ"], "confusers": ["ハチジューゴバイ", "ハチジューゴパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-65-kanji-0", "text": "コーヒーを六十五杯飲んだ。", "targets": [{"span": [5, 9], "gold": ["ロクジューゴハイ"], "confusers": ["ロクジューゴバイ", "ロクジューゴパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-82-kanji-0", "text": "コーヒーを八十二杯飲んだ。", "targets": [{"span": [5, 9], "gold": ["ハチジューニハイ"], "confusers": ["ハチジューニバイ", "ハチジューニパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-100-digit-0", "text": "コーヒーを100杯飲んだ。", "targets": [{"span": [5, 9], "gold": ["ヒャッパイ"], "confusers": ["ヒャクハイ", "ヒャクバイ", "ヒャクパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-杯-what-what-1", "text": "ご飯を何杯食べた。", "targets": [{"span": [3, 5], "gold": ["ナンバイ"], "confusers": ["ナンハイ", "ナンパイ", "ナニハイ", "ナニバイ", "ナニパイ"]}], "category": "numeral", "subcategory": "杯", "source": "rule"}
+{"id": "num-分-1-digit-0", "text": "あと1分で着きます。", "targets": [{"span": [2, 4], "gold": ["イップン"], "confusers": ["イチフン", "イチプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-2-kanji-0", "text": "あと二分で着きます。", "targets": [{"span": [2, 4], "gold": ["ニフン"], "confusers": ["ニプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-4-kanji-0", "text": "あと四分で着きます。", "targets": [{"span": [2, 4], "gold": ["ヨンプン", "ヨンフン"], "confusers": ["シフン", "シプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-5-digit-0", "text": "あと5分で着きます。", "targets": [{"span": [2, 4], "gold": ["ゴフン"], "confusers": ["ゴプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-6-digit-0", "text": "あと6分で着きます。", "targets": [{"span": [2, 4], "gold": ["ロップン"], "confusers": ["ロクフン", "ロクプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-7-kanji-1", "text": "七分だけ待ってください。", "targets": [{"span": [0, 2], "gold": ["ナナフン"], "confusers": ["ナナプン", "シチフン", "シチプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-8-digit-1", "text": "8分だけ待ってください。", "targets": [{"span": [0, 2], "gold": ["ハップン", "ハチフン"], "confusers": ["ハチプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-9-digit-0", "text": "あと9分で着きます。", "targets": [{"span": [2, 4], "gold": ["キューフン"], "confusers": ["キュープン", "クフン", "クプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-10-digit-1", "text": "10分だけ待ってください。", "targets": [{"span": [0, 3], "gold": ["ジュップン", "ジップン"], "confusers": ["ジューフン", "ジュープン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-54-digit-0", "text": "あと54分で着きます。", "targets": [{"span": [2, 5], "gold": ["ゴジューヨンプン", "ゴジューヨンフン"], "confusers": ["ゴジューシフン", "ゴジューシプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-16-kanji-1", "text": "十六分だけ待ってください。", "targets": [{"span": [0, 3], "gold": ["ジューロップン"], "confusers": ["ジューロクフン", "ジューロクプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-11-kanji-0", "text": "あと十一分で着きます。", "targets": [{"span": [2, 5], "gold": ["ジューイップン"], "confusers": ["ジューイチフン", "ジューイチプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-21-kanji-0", "text": "あと二十一分で着きます。", "targets": [{"span": [2, 6], "gold": ["ニジューイップン"], "confusers": ["ニジューイチフン", "ニジューイチプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-26-digit-0", "text": "あと26分で着きます。", "targets": [{"span": [2, 5], "gold": ["ニジューロップン"], "confusers": ["ニジューロクフン", "ニジューロクプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-22-digit-1", "text": "22分だけ待ってください。", "targets": [{"span": [0, 3], "gold": ["ニジューニフン"], "confusers": ["ニジューニプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-46-kanji-1", "text": "四十六分だけ待ってください。", "targets": [{"span": [0, 4], "gold": ["ヨンジューロップン"], "confusers": ["ヨンジューロクフン", "ヨンジューロクプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-100-digit-1", "text": "100分だけ待ってください。", "targets": [{"span": [0, 4], "gold": ["ヒャップン"], "confusers": ["ヒャクフン", "ヒャクプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-分-what-what-0", "text": "あと何分で着きます。", "targets": [{"span": [2, 4], "gold": ["ナンプン"], "confusers": ["ナンフン", "ナニフン", "ナニプン"]}], "category": "numeral", "subcategory": "分", "source": "rule"}
+{"id": "num-回-1-digit-1", "text": "週に1回練習する。", "targets": [{"span": [2, 4], "gold": ["イッカイ"], "confusers": ["イチカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-4-digit-0", "text": "もう4回挑戦した。", "targets": [{"span": [2, 4], "gold": ["ヨンカイ"], "confusers": ["シカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-6-digit-0", "text": "もう6回挑戦した。", "targets": [{"span": [2, 4], "gold": ["ロッカイ"], "confusers": ["ロクカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-7-digit-1", "text": "週に7回練習する。", "targets": [{"span": [2, 4], "gold": ["ナナカイ"], "confusers": ["シチカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-9-kanji-1", "text": "週に九回練習する。", "targets": [{"span": [2, 4], "gold": ["キューカイ"], "confusers": ["クカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-10-kanji-0", "text": "もう十回挑戦した。", "targets": [{"span": [2, 4], "gold": ["ジュッカイ", "ジッカイ"], "confusers": ["ジューカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-11-kanji-1", "text": "週に十一回練習する。", "targets": [{"span": [2, 5], "gold": ["ジューイッカイ"], "confusers": ["ジューイチカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-61-digit-1", "text": "週に61回練習する。", "targets": [{"span": [2, 5], "gold": ["ロクジューイッカイ"], "confusers": ["ロクジューイチカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-54-digit-0", "text": "もう54回挑戦した。", "targets": [{"span": [2, 5], "gold": ["ゴジューヨンカイ"], "confusers": ["ゴジューシカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-71-kanji-1", "text": "週に七十一回練習する。", "targets": [{"span": [2, 6], "gold": ["ナナジューイッカイ"], "confusers": ["ナナジューイチカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-64-digit-0", "text": "もう64回挑戦した。", "targets": [{"span": [2, 5], "gold": ["ロクジューヨンカイ"], "confusers": ["ロクジューシカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-51-digit-1", "text": "週に51回練習する。", "targets": [{"span": [2, 5], "gold": ["ゴジューイッカイ"], "confusers": ["ゴジューイチカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-100-kanji-1", "text": "週に百回練習する。", "targets": [{"span": [2, 4], "gold": ["ヒャッカイ"], "confusers": ["ヒャクカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-回-what-what-0", "text": "もう何回挑戦した。", "targets": [{"span": [2, 4], "gold": ["ナンカイ"], "confusers": ["ナニカイ"]}], "category": "numeral", "subcategory": "回", "source": "rule"}
+{"id": "num-個-1-digit-0", "text": "りんごを1個買った。", "targets": [{"span": [4, 6], "gold": ["イッコ"], "confusers": ["イチコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-4-digit-0", "text": "りんごを4個買った。", "targets": [{"span": [4, 6], "gold": ["ヨンコ"], "confusers": ["シコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-6-kanji-0", "text": "りんごを六個買った。", "targets": [{"span": [4, 6], "gold": ["ロッコ"], "confusers": ["ロクコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-7-kanji-0", "text": "りんごを七個買った。", "targets": [{"span": [4, 6], "gold": ["ナナコ"], "confusers": ["シチコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-9-kanji-1", "text": "消しゴムが九個ある。", "targets": [{"span": [5, 7], "gold": ["キューコ"], "confusers": ["クコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-10-digit-0", "text": "りんごを10個買った。", "targets": [{"span": [4, 7], "gold": ["ジュッコ", "ジッコ"], "confusers": ["ジューコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-84-kanji-0", "text": "りんごを八十四個買った。", "targets": [{"span": [4, 8], "gold": ["ハチジューヨンコ"], "confusers": ["ハチジューシコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-77-digit-0", "text": "りんごを77個買った。", "targets": [{"span": [4, 7], "gold": ["ナナジューナナコ"], "confusers": ["ナナジューシチコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-100-digit-1", "text": "消しゴムが100個ある。", "targets": [{"span": [5, 9], "gold": ["ヒャッコ"], "confusers": ["ヒャクコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-個-what-what-1", "text": "消しゴムが何個ある。", "targets": [{"span": [5, 7], "gold": ["ナンコ"], "confusers": ["ナニコ"]}], "category": "numeral", "subcategory": "個", "source": "rule"}
+{"id": "num-冊-1-digit-0", "text": "本を1冊読んだ。", "targets": [{"span": [2, 4], "gold": ["イッサツ"], "confusers": ["イチサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-4-digit-1", "text": "ノートを4冊用意して。", "targets": [{"span": [4, 6], "gold": ["ヨンサツ"], "confusers": ["シサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-7-kanji-1", "text": "ノートを七冊用意して。", "targets": [{"span": [4, 6], "gold": ["ナナサツ"], "confusers": ["シチサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-9-kanji-1", "text": "ノートを九冊用意して。", "targets": [{"span": [4, 6], "gold": ["キューサツ"], "confusers": ["クサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-10-digit-0", "text": "本を10冊読んだ。", "targets": [{"span": [2, 5], "gold": ["ジュッサツ", "ジッサツ"], "confusers": ["ジューサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-94-kanji-1", "text": "ノートを九十四冊用意して。", "targets": [{"span": [4, 8], "gold": ["キュージューヨンサツ"], "confusers": ["キュージューシサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-24-digit-1", "text": "ノートを24冊用意して。", "targets": [{"span": [4, 7], "gold": ["ニジューヨンサツ"], "confusers": ["ニジューシサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-80-digit-0", "text": "本を80冊読んだ。", "targets": [{"span": [2, 5], "gold": ["ハチジュッサツ", "ハチジッサツ"], "confusers": ["ハチジューサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-81-digit-0", "text": "本を81冊読んだ。", "targets": [{"span": [2, 5], "gold": ["ハチジューイッサツ"], "confusers": ["ハチジューイチサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-99-digit-1", "text": "ノートを99冊用意して。", "targets": [{"span": [4, 7], "gold": ["キュージューキューサツ"], "confusers": ["キュージュークサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-冊-what-what-1", "text": "ノートを何冊用意して。", "targets": [{"span": [4, 6], "gold": ["ナンサツ"], "confusers": ["ナニサツ"]}], "category": "numeral", "subcategory": "冊", "source": "rule"}
+{"id": "num-軒-1-digit-0", "text": "家が1軒並んでいる。", "targets": [{"span": [2, 4], "gold": ["イッケン"], "confusers": ["イチケン", "イチゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-2-digit-1", "text": "店を2軒回った。", "targets": [{"span": [2, 4], "gold": ["ニケン"], "confusers": ["ニゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-3-digit-1", "text": "店を3軒回った。", "targets": [{"span": [2, 4], "gold": ["サンゲン"], "confusers": ["サンケン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-4-digit-0", "text": "家が4軒並んでいる。", "targets": [{"span": [2, 4], "gold": ["ヨンケン"], "confusers": ["ヨンゲン", "シケン", "シゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-5-digit-1", "text": "店を5軒回った。", "targets": [{"span": [2, 4], "gold": ["ゴケン"], "confusers": ["ゴゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-6-digit-1", "text": "店を6軒回った。", "targets": [{"span": [2, 4], "gold": ["ロッケン"], "confusers": ["ロクケン", "ロクゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-7-digit-0", "text": "家が7軒並んでいる。", "targets": [{"span": [2, 4], "gold": ["ナナケン"], "confusers": ["ナナゲン", "シチケン", "シチゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-8-digit-0", "text": "家が8軒並んでいる。", "targets": [{"span": [2, 4], "gold": ["ハッケン", "ハチケン"], "confusers": ["ハチゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-9-kanji-1", "text": "店を九軒回った。", "targets": [{"span": [2, 4], "gold": ["キューケン"], "confusers": ["キューゲン", "クケン", "クゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-10-digit-0", "text": "家が10軒並んでいる。", "targets": [{"span": [2, 5], "gold": ["ジュッケン", "ジッケン"], "confusers": ["ジューケン", "ジューゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-53-digit-1", "text": "店を53軒回った。", "targets": [{"span": [2, 5], "gold": ["ゴジューサンゲン"], "confusers": ["ゴジューサンケン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-70-kanji-0", "text": "家が七十軒並んでいる。", "targets": [{"span": [2, 5], "gold": ["ナナジュッケン", "ナナジッケン"], "confusers": ["ナナジューケン", "ナナジューゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-24-digit-1", "text": "店を24軒回った。", "targets": [{"span": [2, 5], "gold": ["ニジューヨンケン"], "confusers": ["ニジューヨンゲン", "ニジューシケン", "ニジューシゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-41-kanji-0", "text": "家が四十一軒並んでいる。", "targets": [{"span": [2, 6], "gold": ["ヨンジューイッケン"], "confusers": ["ヨンジューイチケン", "ヨンジューイチゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-23-digit-0", "text": "家が23軒並んでいる。", "targets": [{"span": [2, 5], "gold": ["ニジューサンゲン"], "confusers": ["ニジューサンケン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-61-digit-0", "text": "家が61軒並んでいる。", "targets": [{"span": [2, 5], "gold": ["ロクジューイッケン"], "confusers": ["ロクジューイチケン", "ロクジューイチゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-44-digit-1", "text": "店を44軒回った。", "targets": [{"span": [2, 5], "gold": ["ヨンジューヨンケン"], "confusers": ["ヨンジューヨンゲン", "ヨンジューシケン", "ヨンジューシゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-17-digit-0", "text": "家が17軒並んでいる。", "targets": [{"span": [2, 5], "gold": ["ジューナナケン"], "confusers": ["ジューナナゲン", "ジューシチケン", "ジューシチゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-54-digit-1", "text": "店を54軒回った。", "targets": [{"span": [2, 5], "gold": ["ゴジューヨンケン"], "confusers": ["ゴジューヨンゲン", "ゴジューシケン", "ゴジューシゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-100-digit-1", "text": "店を100軒回った。", "targets": [{"span": [2, 6], "gold": ["ヒャッケン"], "confusers": ["ヒャクケン", "ヒャクゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-軒-what-what-0", "text": "家が何軒並んでいる。", "targets": [{"span": [2, 4], "gold": ["ナンゲン"], "confusers": ["ナンケン", "ナニケン", "ナニゲン"]}], "category": "numeral", "subcategory": "軒", "source": "rule"}
+{"id": "num-階-1-digit-0", "text": "エレベーターで1階に行く。", "targets": [{"span": [7, 9], "gold": ["イッカイ"], "confusers": ["イチカイ", "イチガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-2-digit-0", "text": "エレベーターで2階に行く。", "targets": [{"span": [7, 9], "gold": ["ニカイ"], "confusers": ["ニガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-4-kanji-0", "text": "エレベーターで四階に行く。", "targets": [{"span": [7, 9], "gold": ["ヨンカイ"], "confusers": ["ヨンガイ", "シカイ", "シガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-5-digit-1", "text": "5階の部屋です。", "targets": [{"span": [0, 2], "gold": ["ゴカイ"], "confusers": ["ゴガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-6-digit-1", "text": "6階の部屋です。", "targets": [{"span": [0, 2], "gold": ["ロッカイ"], "confusers": ["ロクカイ", "ロクガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-7-digit-0", "text": "エレベーターで7階に行く。", "targets": [{"span": [7, 9], "gold": ["ナナカイ"], "confusers": ["ナナガイ", "シチカイ", "シチガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-8-digit-0", "text": "エレベーターで8階に行く。", "targets": [{"span": [7, 9], "gold": ["ハッカイ", "ハチカイ"], "confusers": ["ハチガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-9-digit-0", "text": "エレベーターで9階に行く。", "targets": [{"span": [7, 9], "gold": ["キューカイ"], "confusers": ["キューガイ", "クカイ", "クガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-10-digit-1", "text": "10階の部屋です。", "targets": [{"span": [0, 3], "gold": ["ジュッカイ", "ジッカイ"], "confusers": ["ジューカイ", "ジューガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-56-digit-0", "text": "エレベーターで56階に行く。", "targets": [{"span": [7, 10], "gold": ["ゴジューロッカイ"], "confusers": ["ゴジューロクカイ", "ゴジューロクガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-20-digit-1", "text": "20階の部屋です。", "targets": [{"span": [0, 3], "gold": ["ニジュッカイ", "ニジッカイ"], "confusers": ["ニジューカイ", "ニジューガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-50-digit-1", "text": "50階の部屋です。", "targets": [{"span": [0, 3], "gold": ["ゴジュッカイ", "ゴジッカイ"], "confusers": ["ゴジューカイ", "ゴジューガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-34-kanji-1", "text": "三十四階の部屋です。", "targets": [{"span": [0, 4], "gold": ["サンジューヨンカイ"], "confusers": ["サンジューヨンガイ", "サンジューシカイ", "サンジューシガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-38-kanji-1", "text": "三十八階の部屋です。", "targets": [{"span": [0, 4], "gold": ["サンジューハッカイ", "サンジューハチカイ"], "confusers": ["サンジューハチガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-71-kanji-0", "text": "エレベーターで七十一階に行く。", "targets": [{"span": [7, 11], "gold": ["ナナジューイッカイ"], "confusers": ["ナナジューイチカイ", "ナナジューイチガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-37-kanji-0", "text": "エレベーターで三十七階に行く。", "targets": [{"span": [7, 11], "gold": ["サンジューナナカイ"], "confusers": ["サンジューナナガイ", "サンジューシチカイ", "サンジューシチガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-100-digit-1", "text": "100階の部屋です。", "targets": [{"span": [0, 4], "gold": ["ヒャッカイ"], "confusers": ["ヒャクカイ", "ヒャクガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-階-what-what-1", "text": "何階の部屋です。", "targets": [{"span": [0, 2], "gold": ["ナンガイ", "ナンカイ"], "confusers": ["ナニカイ", "ナニガイ"]}], "category": "numeral", "subcategory": "階", "source": "rule"}
+{"id": "num-足-1-digit-1", "text": "靴を1足持っている。", "targets": [{"span": [2, 4], "gold": ["イッソク"], "confusers": ["イチソク", "イチゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-2-kanji-1", "text": "靴を二足持っている。", "targets": [{"span": [2, 4], "gold": ["ニソク"], "confusers": ["ニゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-3-digit-0", "text": "靴下を3足買った。", "targets": [{"span": [3, 5], "gold": ["サンゾク"], "confusers": ["サンソク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-4-kanji-0", "text": "靴下を四足買った。", "targets": [{"span": [3, 5], "gold": ["ヨンソク"], "confusers": ["ヨンゾク", "シソク", "シゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-5-digit-0", "text": "靴下を5足買った。", "targets": [{"span": [3, 5], "gold": ["ゴソク"], "confusers": ["ゴゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-6-digit-0", "text": "靴下を6足買った。", "targets": [{"span": [3, 5], "gold": ["ロクソク"], "confusers": ["ロクゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-7-digit-0", "text": "靴下を7足買った。", "targets": [{"span": [3, 5], "gold": ["ナナソク"], "confusers": ["ナナゾク", "シチソク", "シチゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-8-digit-1", "text": "靴を8足持っている。", "targets": [{"span": [2, 4], "gold": ["ハッソク"], "confusers": ["ハチソク", "ハチゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-9-digit-0", "text": "靴下を9足買った。", "targets": [{"span": [3, 5], "gold": ["キューソク"], "confusers": ["キューゾク", "クソク", "クゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-10-kanji-1", "text": "靴を十足持っている。", "targets": [{"span": [2, 4], "gold": ["ジュッソク", "ジッソク"], "confusers": ["ジューソク", "ジューゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-98-digit-1", "text": "靴を98足持っている。", "targets": [{"span": [2, 5], "gold": ["キュージューハッソク"], "confusers": ["キュージューハチソク", "キュージューハチゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-44-kanji-0", "text": "靴下を四十四足買った。", "targets": [{"span": [3, 7], "gold": ["ヨンジューヨンソク"], "confusers": ["ヨンジューヨンゾク", "ヨンジューシソク", "ヨンジューシゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-14-kanji-0", "text": "靴下を十四足買った。", "targets": [{"span": [3, 6], "gold": ["ジューヨンソク"], "confusers": ["ジューヨンゾク", "ジューシソク", "ジューシゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-66-kanji-0", "text": "靴下を六十六足買った。", "targets": [{"span": [3, 7], "gold": ["ロクジューロクソク"], "confusers": ["ロクジューロクゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-26-kanji-1", "text": "靴を二十六足持っている。", "targets": [{"span": [2, 6], "gold": ["ニジューロクソク"], "confusers": ["ニジューロクゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-38-digit-1", "text": "靴を38足持っている。", "targets": [{"span": [2, 5], "gold": ["サンジューハッソク"], "confusers": ["サンジューハチソク", "サンジューハチゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-93-kanji-1", "text": "靴を九十三足持っている。", "targets": [{"span": [2, 6], "gold": ["キュージューサンゾク"], "confusers": ["キュージューサンソク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-32-digit-1", "text": "靴を32足持っている。", "targets": [{"span": [2, 5], "gold": ["サンジューニソク"], "confusers": ["サンジューニゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-63-kanji-0", "text": "靴下を六十三足買った。", "targets": [{"span": [3, 7], "gold": ["ロクジューサンゾク"], "confusers": ["ロクジューサンソク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-100-digit-0", "text": "靴下を100足買った。", "targets": [{"span": [3, 7], "gold": ["ヒャクソク"], "confusers": ["ヒャクゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-足-what-what-0", "text": "靴下を何足買った。", "targets": [{"span": [3, 5], "gold": ["ナンゾク"], "confusers": ["ナンソク", "ナニソク", "ナニゾク"]}], "category": "numeral", "subcategory": "足", "source": "rule"}
+{"id": "num-歳-1-digit-1", "text": "彼女は1歳だそうだ。", "targets": [{"span": [3, 5], "gold": ["イッサイ"], "confusers": ["イチサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-4-digit-1", "text": "彼女は4歳だそうだ。", "targets": [{"span": [3, 5], "gold": ["ヨンサイ"], "confusers": ["シサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-7-digit-1", "text": "彼女は7歳だそうだ。", "targets": [{"span": [3, 5], "gold": ["ナナサイ"], "confusers": ["シチサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-8-digit-1", "text": "彼女は8歳だそうだ。", "targets": [{"span": [3, 5], "gold": ["ハッサイ"], "confusers": ["ハチサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-9-kanji-0", "text": "弟は九歳になった。", "targets": [{"span": [2, 4], "gold": ["キューサイ"], "confusers": ["クサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-10-kanji-0", "text": "弟は十歳になった。", "targets": [{"span": [2, 4], "gold": ["ジュッサイ", "ジッサイ"], "confusers": ["ジューサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-64-digit-1", "text": "彼女は64歳だそうだ。", "targets": [{"span": [3, 6], "gold": ["ロクジューヨンサイ"], "confusers": ["ロクジューシサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-71-digit-1", "text": "彼女は71歳だそうだ。", "targets": [{"span": [3, 6], "gold": ["ナナジューイッサイ"], "confusers": ["ナナジューイチサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-38-digit-0", "text": "弟は38歳になった。", "targets": [{"span": [2, 5], "gold": ["サンジューハッサイ"], "confusers": ["サンジューハチサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-18-digit-0", "text": "弟は18歳になった。", "targets": [{"span": [2, 5], "gold": ["ジューハッサイ"], "confusers": ["ジューハチサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-80-kanji-0", "text": "弟は八十歳になった。", "targets": [{"span": [2, 5], "gold": ["ハチジュッサイ", "ハチジッサイ"], "confusers": ["ハチジューサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-48-kanji-1", "text": "彼女は四十八歳だそうだ。", "targets": [{"span": [3, 7], "gold": ["ヨンジューハッサイ"], "confusers": ["ヨンジューハチサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-歳-what-what-1", "text": "彼女は何歳だそうだ。", "targets": [{"span": [3, 5], "gold": ["ナンサイ"], "confusers": ["ナニサイ"]}], "category": "numeral", "subcategory": "歳", "source": "rule"}
+{"id": "num-円-4-kanji-0", "text": "これは四円です。", "targets": [{"span": [3, 5], "gold": ["ヨエン"], "confusers": ["ヨンエン", "シエン"]}], "category": "numeral", "subcategory": "円", "source": "rule"}
+{"id": "num-円-7-digit-1", "text": "あと7円足りない。", "targets": [{"span": [2, 4], "gold": ["ナナエン"], "confusers": ["シチエン"]}], "category": "numeral", "subcategory": "円", "source": "rule"}
+{"id": "num-円-9-digit-0", "text": "これは9円です。", "targets": [{"span": [3, 5], "gold": ["キューエン"], "confusers": ["クエン"]}], "category": "numeral", "subcategory": "円", "source": "rule"}
+{"id": "num-円-84-kanji-1", "text": "あと八十四円足りない。", "targets": [{"span": [2, 6], "gold": ["ハチジューヨエン"], "confusers": ["ハチジューヨンエン", "ハチジューシエン"]}], "category": "numeral", "subcategory": "円", "source": "rule"}
+{"id": "num-円-94-digit-1", "text": "あと94円足りない。", "targets": [{"span": [2, 5], "gold": ["キュージューヨエン"], "confusers": ["キュージューヨンエン", "キュージューシエン"]}], "category": "numeral", "subcategory": "円", "source": "rule"}
+{"id": "num-円-97-digit-0", "text": "これは97円です。", "targets": [{"span": [3, 6], "gold": ["キュージューナナエン"], "confusers": ["キュージューシチエン"]}], "category": "numeral", "subcategory": "円", "source": "rule"}
+{"id": "num-円-what-what-1", "text": "あと何円足りない。", "targets": [{"span": [2, 4], "gold": ["ナンエン"], "confusers": ["ナニエン"]}], "category": "numeral", "subcategory": "円", "source": "rule"}
+{"id": "num-人-1-digit-0", "text": "子どもが1人いる。", "targets": [{"span": [4, 6], "gold": ["ヒトリ"], "confusers": ["イチニン"]}], "category": "numeral", "subcategory": "人", "source": "rule"}
+{"id": "num-人-2-digit-0", "text": "子どもが2人いる。", "targets": [{"span": [4, 6], "gold": ["フタリ"], "confusers": ["ニニン"]}], "category": "numeral", "subcategory": "人", "source": "rule"}
+{"id": "num-人-4-digit-0", "text": "子どもが4人いる。", "targets": [{"span": [4, 6], "gold": ["ヨニン"], "confusers": ["ヨンニン", "シニン"]}], "category": "numeral", "subcategory": "人", "source": "rule"}
+{"id": "num-人-9-kanji-0", "text": "子どもが九人いる。", "targets": [{"span": [4, 6], "gold": ["キューニン"], "confusers": ["クニン"]}], "category": "numeral", "subcategory": "人", "source": "rule"}
+{"id": "num-人-54-digit-0", "text": "子どもが54人いる。", "targets": [{"span": [4, 7], "gold": ["ゴジューヨニン"], "confusers": ["ゴジューヨンニン", "ゴジューシニン"]}], "category": "numeral", "subcategory": "人", "source": "rule"}
+{"id": "num-人-44-kanji-1", "text": "四十四人で行こう。", "targets": [{"span": [0, 4], "gold": ["ヨンジューヨニン"], "confusers": ["ヨンジューヨンニン", "ヨンジューシニン"]}], "category": "numeral", "subcategory": "人", "source": "rule"}
+{"id": "num-人-what-what-1", "text": "何人で行こう。", "targets": [{"span": [0, 2], "gold": ["ナンニン"], "confusers": ["ナニニン"]}], "category": "numeral", "subcategory": "人", "source": "rule"}
+{"id": "num-つ-1-digit-0", "text": "箱が1つある。", "targets": [{"span": [2, 4], "gold": ["ヒトツ"], "confusers": ["イチツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-2-digit-1", "text": "2つ選んでください。", "targets": [{"span": [0, 2], "gold": ["フタツ"], "confusers": ["ニツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-3-digit-1", "text": "3つ選んでください。", "targets": [{"span": [0, 2], "gold": ["ミッツ"], "confusers": ["サンツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-4-digit-0", "text": "箱が4つある。", "targets": [{"span": [2, 4], "gold": ["ヨッツ"], "confusers": ["ヨンツ", "シツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-5-digit-1", "text": "5つ選んでください。", "targets": [{"span": [0, 2], "gold": ["イツツ"], "confusers": ["ゴツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-6-kanji-0", "text": "箱が六つある。", "targets": [{"span": [2, 4], "gold": ["ムッツ"], "confusers": ["ロクツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-7-digit-0", "text": "箱が7つある。", "targets": [{"span": [2, 4], "gold": ["ナナツ"], "confusers": ["シチツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-8-digit-1", "text": "8つ選んでください。", "targets": [{"span": [0, 2], "gold": ["ヤッツ"], "confusers": ["ハチツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-つ-9-digit-0", "text": "箱が9つある。", "targets": [{"span": [2, 4], "gold": ["ココノツ"], "confusers": ["キューツ", "クツ"]}], "category": "numeral", "subcategory": "つ", "source": "rule"}
+{"id": "num-時-4-digit-0", "text": "4時に集合ね。", "targets": [{"span": [0, 2], "gold": ["ヨジ"], "confusers": ["ヨンジ", "シジ"]}], "category": "numeral", "subcategory": "時", "source": "rule"}
+{"id": "num-時-9-kanji-1", "text": "今朝は九時に起きた。", "targets": [{"span": [3, 5], "gold": ["クジ"], "confusers": ["キュージ"]}], "category": "numeral", "subcategory": "時", "source": "rule"}
+{"id": "num-時-14-digit-1", "text": "今朝は14時に起きた。", "targets": [{"span": [3, 6], "gold": ["ジューヨジ"], "confusers": ["ジューヨンジ", "ジューシジ"]}], "category": "numeral", "subcategory": "時", "source": "rule"}
+{"id": "num-時-what-what-0", "text": "何時に集合ね。", "targets": [{"span": [0, 2], "gold": ["ナンジ"], "confusers": ["ナニジ"]}], "category": "numeral", "subcategory": "時", "source": "rule"}
+{"id": "num-date-4-1-digit-0", "text": "4月1日に会おう。", "targets": [{"span": [0, 2], "gold": ["シガツ"], "confusers": ["ヨンガツ", "ヨガツ"]}, {"span": [2, 4], "gold": ["ツイタチ"], "confusers": ["イチニチ", "イチカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-12-2-digit-1", "text": "誕生日は12月2日です。", "targets": [{"span": [7, 9], "gold": ["フツカ"], "confusers": ["ニニチ", "ニカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-1-3-digit-1", "text": "誕生日は1月3日です。", "targets": [{"span": [6, 8], "gold": ["ミッカ"], "confusers": ["サンニチ", "サンカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-2-4-kanji-1", "text": "誕生日は二月四日です。", "targets": [{"span": [6, 8], "gold": ["ヨッカ"], "confusers": ["ヨンニチ", "シニチ", "ヨンカ", "シカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-9-5-kanji-0", "text": "九月五日に会おう。", "targets": [{"span": [0, 2], "gold": ["クガツ"], "confusers": ["キューガツ"]}, {"span": [2, 4], "gold": ["イツカ"], "confusers": ["ゴニチ", "ゴカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-7-6-kanji-1", "text": "誕生日は七月六日です。", "targets": [{"span": [4, 6], "gold": ["シチガツ"], "confusers": ["ナナガツ"]}, {"span": [6, 8], "gold": ["ムイカ"], "confusers": ["ロクニチ", "ロクカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-2-7-kanji-1", "text": "誕生日は二月七日です。", "targets": [{"span": [6, 8], "gold": ["ナノカ", "ナヌカ"], "confusers": ["ナナニチ", "シチニチ", "ナナカ", "シチカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-4-8-kanji-1", "text": "誕生日は四月八日です。", "targets": [{"span": [4, 6], "gold": ["シガツ"], "confusers": ["ヨンガツ", "ヨガツ"]}, {"span": [6, 8], "gold": ["ヨーカ"], "confusers": ["ハチニチ", "ハチカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-5-9-kanji-0", "text": "五月九日に会おう。", "targets": [{"span": [2, 4], "gold": ["ココノカ"], "confusers": ["キューニチ", "クニチ", "キューカ", "クカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-2-10-digit-0", "text": "2月10日に会おう。", "targets": [{"span": [2, 5], "gold": ["トーカ"], "confusers": ["ジューニチ", "ジューカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-1-14-digit-1", "text": "誕生日は1月14日です。", "targets": [{"span": [6, 9], "gold": ["ジューヨッカ"], "confusers": ["ジューヨンニチ", "ジューシニチ", "ジューヨンカ", "ジューシカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-9-17-kanji-1", "text": "誕生日は九月十七日です。", "targets": [{"span": [4, 6], "gold": ["クガツ"], "confusers": ["キューガツ"]}, {"span": [6, 9], "gold": ["ジューシチニチ", "ジューナナニチ"], "confusers": ["ジューナナカ", "ジューシチカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-8-19-digit-1", "text": "誕生日は8月19日です。", "targets": [{"span": [6, 9], "gold": ["ジュークニチ", "ジューキューニチ"], "confusers": ["ジューキューカ", "ジュークカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-6-20-digit-0", "text": "6月20日に会おう。", "targets": [{"span": [2, 5], "gold": ["ハツカ"], "confusers": ["ニジューニチ", "ニジューカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-10-24-digit-0", "text": "10月24日に会おう。", "targets": [{"span": [3, 6], "gold": ["ニジューヨッカ"], "confusers": ["ニジューヨンニチ", "ニジューシニチ", "ニジューヨンカ", "ニジューシカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-2-27-digit-1", "text": "誕生日は2月27日です。", "targets": [{"span": [6, 9], "gold": ["ニジューシチニチ", "ニジューナナニチ"], "confusers": ["ニジューナナカ", "ニジューシチカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-9-29-digit-0", "text": "9月29日に会おう。", "targets": [{"span": [0, 2], "gold": ["クガツ"], "confusers": ["キューガツ"]}, {"span": [2, 5], "gold": ["ニジュークニチ", "ニジューキューニチ"], "confusers": ["ニジューキューカ", "ニジュークカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-9-31-digit-0", "text": "9月31日に会おう。", "targets": [{"span": [0, 2], "gold": ["クガツ"], "confusers": ["キューガツ"]}, {"span": [2, 5], "gold": ["サンジューイチニチ"], "confusers": ["サンジューイチカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-2-22-digit-1", "text": "誕生日は2月22日です。", "targets": [{"span": [6, 9], "gold": ["ニジューニニチ"], "confusers": ["ニジューニカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-5-25-kanji-0", "text": "五月二十五日に会おう。", "targets": [{"span": [2, 6], "gold": ["ニジューゴニチ"], "confusers": ["ニジューゴカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-10-13-kanji-0", "text": "十月十三日に会おう。", "targets": [{"span": [2, 5], "gold": ["ジューサンニチ"], "confusers": ["ジューサンカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
+{"id": "num-date-9-26-digit-1", "text": "誕生日は9月26日です。", "targets": [{"span": [4, 6], "gold": ["クガツ"], "confusers": ["キューガツ"]}, {"span": [6, 9], "gold": ["ニジューロクニチ"], "confusers": ["ニジューロクカ"]}], "category": "numeral", "subcategory": "日付", "source": "rule"}
